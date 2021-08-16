@@ -68,12 +68,12 @@ From here we notice that mainly white people have income >50k.
 
 ## Baseline
 
-Using the dataset (data_train.csv) as it is (after checking for NaNs and dropping duplicates), splitting it in 75% training and 25% test, the metrics obtained are:
+Using the dataset (data_train.csv) as it is (after checking for NaNs and dropping duplicates), splitting it in 75% training and 25% test, using `RandomForestClassifier()` from `sklearn`, the metrics obtained are:
 
 
 | Metrics                 | Score          |
 |-----------------------|------------------|
-| accuracy	| 0.86            |
+|accuracy	| 0.86            |
 |roc_auc_score	| 0.90            |
 |matthews_corrcoef | 0.60            |
 |MAE		| 0.14            |
@@ -90,6 +90,19 @@ Using the dataset (data_train.csv) as it is (after checking for NaNs and droppin
 
 ### ROC curve
 ![](visuals/roc.png)
+
+## First analysis
+
+The data_train.csv includes 32516 measures. From those, 24720 are labeled as 0, meaning that the income is <=50k. For incomes >50k, labeled as 1, there are only 7841 point.
+This is only 24% of the dataset. Thi shows us that the dataset is clearly unbalanced. This can explain the different scores obtained depending the metric we use.
+For instance, we know that **accuracy** is sensible to unbalanced, and that **F1-score** (as combination of recall and precision) is not good either.
+
+´Matthews_corrcoef´ or **Mathews Correlation Coefficient** or MCC can be better way to evaluate the model. It considers TP, TN, FP and FN.
+If we trust this method to measure the performance of our model, a 0.6 score is not the best.
+
+Considering all the above explained, we see that some work is needed to improve the performance of the model
+
+
 
 # Contributors
 | Name                  | Github                                 |
