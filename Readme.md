@@ -46,19 +46,19 @@ Features of the dataset:
 ![](visuals/heatmap.png)
 
 
-*Income related to age
+### Income related to age
 
 ![](visuals/income_age.png)
 
 
-*Income related to gender
+### Income related to gender
 
 ![](visuals/income_sex.png)
 
 We can see here that there is still a huge gap in income between male and female.
 
 
-*Income related to race
+### Income related to race
 
 ![](visuals/income_race.png)
 
