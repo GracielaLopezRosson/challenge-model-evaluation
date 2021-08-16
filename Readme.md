@@ -41,25 +41,27 @@ Features of the dataset:
 
 
 ## Data visualization
-**Heatmap showing some correlations bettween the features on the dataset.**
+*Heatmap showing some correlations bettween the features on the dataset.
 
 ![](visuals/heatmap.png)
 
 
-**Income related to age**
+*Income related to age
 
 ![](visuals/income_age.png)
 
 
-**Income related to gender**
+*Income related to gender
 
 ![](visuals/income_sex.png)
+
 We can see here that there is still a huge gap in income between male and female.
 
 
-**Income related to race**
+*Income related to race
 
 ![](visuals/income_race.png)
+
 From here we notice that mainly white people have income >50k.
 
 ## Baseline
