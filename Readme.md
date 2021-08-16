@@ -28,8 +28,9 @@ The dataset and Readme used can be found here (https://github.com/becodeorg/GNT-
 # Usage
 | File                | Description                                                    |
 |---------------------|----------------------------------------------------------------|
-| data_train.csv          | Original dataset acquired by Immo Eliza                        |
-| data_test.csv            | Output of Clean.py  <br>Cleaned data to use in the Machine-Learning-model |
+| data_train.csv          | Input dataset to train the model|
+| data_test.csv            | Extra dataset to test the model |
+| /visuals            | Folder including the plots presented on the Readme |
 | model-validation.ipynb       | Jupyter notebook used to work with the data |
 | model-evaluation.py            | Final python code performing the model and the analysis |
 
