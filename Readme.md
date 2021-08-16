@@ -115,7 +115,7 @@ We will study now the impact of changing parameters on the model performance.
 To start, now the test size is 30% of the data, and not 25% as previously.
 
 ### Random state 
-Changing the random state (how the different samples are distributed between the training and the testing set) when splitting the data, from values 0 to 20, the score varied between 80.4% to 81.7%. The highest score was obtained with random_state = 3.
+Changing the random state (how the different samples are distributed between the training and the testing set) when splitting the data, from values 0 to 20, the score varied between 85.2% to 86.6%. The highest score was obtained with random_state = 15.
 
 
 
