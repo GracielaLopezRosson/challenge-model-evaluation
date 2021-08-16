@@ -80,7 +80,7 @@ Using the dataset (data_train.csv) as it is (after checking for NaNs and droppin
 |MAE		| 0.14            |
 |MQE		| 0.14            |
 |R2		| 0.23            |
-|Cross validation|            |
+
 
 
 ### Classification report
@@ -114,8 +114,31 @@ Although, before changing the parameters, it is possible to use another metric. 
 We will study now the impact of changing parameters on the model performance. 
 To start, now the test size is 30% of the data, and not 25% as previously.
 
+Second, now the dataset is standardize.
+
 ### Random state 
 Changing the random state (how the different samples are distributed between the training and the testing set) when splitting the data, from values 0 to 20, the score varied between 85.2% to 86.6%. The highest score was obtained with random_state = 15.
+
+## Hyperparameters
+
+The best way to do this is using `RandomizedSearchCV` to perform a random search for hyperparameters.
+With this method, the optimal parameters found for the model are *n_estimators = 101, max_depth=40*.
+
+Fitting the model with those values gives:
+
+| Metrics                 | Score          |
+|-----------------------|------------------|
+|accuracy	| 0.86            |
+|matthews_corrcoef | 0.59           |
+|f1-score		| 0.67            |
+
+### Confussion matrix
+![](visuals/cm_matrix_hyper.png)
+
+# Conclusion
+
+No real improvement was observed after tuning the model or changing the hyperparameters.
+Considering the dataset is unbalanced, the best metrics seems to be the MCC.
 
 
 
