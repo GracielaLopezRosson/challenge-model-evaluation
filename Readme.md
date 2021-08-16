@@ -44,6 +44,22 @@ The mission is *to predict the income of every US citizen*, using `RandomForestC
 
 ![](income_age.png)
 
+## Baseline
+
+Using the dataset (data_train.csv) as it is (after checking for NaNs and dropping duplicates), splitting it in 75% training and 25% test, the metrics obtained are:
+
+
+| Metrics                 | Score          |
+|-----------------------|------------------|
+| accuracy	| 0.86            |
+|roc_auc_score	| 0.90            |
+|matthews_corrcoef | 0.60            |
+|MAE		| 0.14            |
+|MQE		| 0.14            |
+|R2		| 0.23            |
+|Cross validation|            |
+*confusion matrix
+*classification report
 
 # Contributors
 | Name                  | Github                                 |
