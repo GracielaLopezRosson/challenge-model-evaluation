@@ -36,7 +36,7 @@ The mission is *to predict the income of every US citizen*, using `RandomForestC
 # Results
 
 ## Data visualization
-** Heatmap showing some correlations bettween the features on the dataset.
+**Heatmap showing some correlations bettween the features on the dataset.
 
 ![](visuals/heatmap.png)
 
@@ -60,6 +60,12 @@ Using the dataset (data_train.csv) as it is (after checking for NaNs and droppin
 |Cross validation|            |
 *confusion matrix
 *classification report
+
+![](visuals/class_report.png)
+
+![](visuals/confusion_matrix.png)
+
+![](visuals/roc.png)
 
 # Contributors
 | Name                  | Github                                 |
