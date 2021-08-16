@@ -38,11 +38,11 @@ The mission is *to predict the income of every US citizen*, using `RandomForestC
 ## Data visualization
 ** Heatmap showing some correlations bettween the features on the dataset.
 
-![](heatmap.png)
+![](../visuals/heatmap.png)
 
 ** Income related to age
 
-![](income_age.png)
+![](../visuals/income_age.png)
 
 ## Baseline
 
