@@ -35,6 +35,10 @@ The mission is *to predict the income of every US citizen*, using `RandomForestC
 
 # Results
 
+Features of the dataset: 
+[age, workclass, fnlwgt education, education-num, marital-status, occupation, relationship, race, sex, capital-gain, capital-loss, hours-per-week, native-country]	
+
+
 ## Data visualization
 **Heatmap showing some correlations bettween the features on the dataset.
 
@@ -43,6 +47,16 @@ The mission is *to predict the income of every US citizen*, using `RandomForestC
 ** Income related to age
 
 ![](visuals/income_age.png)
+
+** Income related to gender
+
+![](visuals/income_sex.png)
+We can see here that there is still a huge gap in income between male and female.
+
+** Income related to race
+
+![](visuals/income_race.png)
+From here we notice that mainly white people have income >50k.
 
 ## Baseline
 
