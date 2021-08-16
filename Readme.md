@@ -2,6 +2,7 @@
 
 # Description
 The mission is *to predict the income of every US citizen*, using `RandomForestClassifier()` from `sklearn`.   
+The dataset and Readme used can be found here (https://github.com/becodeorg/GNT-Arai-2.31/blob/master/content/additional_resources/datasets/US%20Income/README.md)
 
 ## Mission objectives
 
@@ -27,10 +28,10 @@ The mission is *to predict the income of every US citizen*, using `RandomForestC
 # Usage
 | File                | Description                                                    |
 |---------------------|----------------------------------------------------------------|
-| cleaned_dataset.csv | Original dataset acquired by Immo Eliza                        |
-| df2_regions.csv     | Output of Clean.py  <br>Cleaned data to use in the Machine-Learning-model |
-| Regression.py       | File containing Python code  <br>This file was used to:  <br>1. split Belgium between regions:    <br>* Wallonia  <br>* Flanders  <br>* Brussels <br>2. Make a Machine-Learning-model for every region<br> |
-| Clean.py            | File containing Python code  <br>This file was used to clean the database (cleaned_dataset.csv) |
+| data_train.csv          | Original dataset acquired by Immo Eliza                        |
+| data_test.csv            | Output of Clean.py  <br>Cleaned data to use in the Machine-Learning-model |
+| model-validation.ipynb       | Jupyter notebook used to work with the data |
+| model-evaluation.py            | Final python code performing the model and the analysis |
 
 
 # Results
@@ -44,14 +45,17 @@ Features of the dataset:
 
 ![](visuals/heatmap.png)
 
+
 **Income related to age**
 
 ![](visuals/income_age.png)
+
 
 **Income related to gender**
 
 ![](visuals/income_sex.png)
 We can see here that there is still a huge gap in income between male and female.
+
 
 **Income related to race**
 
