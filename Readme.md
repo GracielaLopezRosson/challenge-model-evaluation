@@ -41,7 +41,7 @@ Features of the dataset:
 
 
 ## Data visualization
-*Heatmap showing some correlations bettween the features on the dataset.
+### Heatmap showing some correlations bettween the features on the dataset.
 
 ![](visuals/heatmap.png)
 
@@ -52,17 +52,19 @@ Features of the dataset:
 
 
 ### Income related to gender
+We can see here that there is still a huge gap in income between male and female.
 
 ![](visuals/income_sex.png)
 
-We can see here that there is still a huge gap in income between male and female.
+
 
 
 ### Income related to race
+From here we notice that mainly white people have income >50k.
 
 ![](visuals/income_race.png)
 
-From here we notice that mainly white people have income >50k.
+
 
 ## Baseline
 
@@ -80,13 +82,13 @@ Using the dataset (data_train.csv) as it is (after checking for NaNs and droppin
 |Cross validation|            |
 
 
-**Classification report**
+### Classification report
 ![](visuals/class_report.png)
 
-**Confusion matrix**
+### Confusion matrix
 ![](visuals/confusion_matrix.png)
 
-**ROC curve**
+### ROC curve
 ![](visuals/roc.png)
 
 # Contributors
