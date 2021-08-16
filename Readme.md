@@ -101,7 +101,21 @@ For instance, we know that **accuracy** is sensible to unbalanced, and that **F1
 ´Matthews_corrcoef´ or **Mathews Correlation Coefficient** or MCC can be better way to evaluate the model. It considers TP, TN, FP and FN.
 If we trust this method to measure the performance of our model, a 0.6 score is not the best.
 
-Considering all the above explained, we see that some work is needed to improve the performance of the model
+Considering all the above explained, we see that some work is needed to improve the performance of the model.
+
+Although, before changing the parameters, it is possible to use another metric. `balanced_accuracy_score` is used in classification problems to deal with imbalanced datasets, which is precisely the case of our dataset.
+
+| Metrics                 | Score          |
+|-----------------------|------------------|
+|balanced_accuracy	| 0.78            |
+
+## Tuning the model
+
+We will study now the impact of changing parameters on the model performance. 
+To start, now the test size is 30% of the data, and not 25% as previously.
+
+### Random state 
+Changing the random state (how the different samples are distributed between the training and the testing set) when splitting the data, from values 0 to 20, the score varied between 80.4% to 81.7%. The highest score was obtained with random_state = 3.
 
 
 
