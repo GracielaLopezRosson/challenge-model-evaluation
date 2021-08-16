@@ -40,7 +40,7 @@ Features of the dataset:
 
 
 ## Data visualization
-**Heatmap showing some correlations bettween the features on the dataset.
+** Heatmap showing some correlations bettween the features on the dataset.
 
 ![](visuals/heatmap.png)
 
